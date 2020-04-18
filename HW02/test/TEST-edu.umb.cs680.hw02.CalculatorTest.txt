@@ -1,0 +1,17 @@
+Testcase: edu.umb.cs680.hw02.CalculatorTest
+Test: divide3by2() took 32 milli sec(s)
+Test: divide5by3() took 1 milli sec(s)
+Test: multiply3_0by0_0() took 0 milli sec(s)
+Test: multiply3_4028235E38by0_5() took 0 milli sec(s)
+Test: divide5by0ExceptionWord() took 0 milli sec(s)
+Test: multiply3byMinus1() took 2 milli sec(s)
+Test: multiply3by4() took 1 milli sec(s)
+Test: divide5by0Throw() took 3 milli sec(s)
+Test: divide55byMinus5() took 1 milli sec(s)
+Test: divide55byMinus7() took 0 milli sec(s)
+Test: divide1_0by1() took 0 milli sec(s)
+Test: multiply5_3by4_0() took 1 milli sec(s)
+Tests run: 12, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 64 milli sec(s)
+------------- Standard Output ---------------
+division by zero
+------------- ---------------- ---------------
