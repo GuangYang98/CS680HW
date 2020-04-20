@@ -1,0 +1,10 @@
+Testcase: edu.umb.cs680.hw04.PrimeGeneratorTest
+Test: from1to10() took 43 milli sec(s)
+Test: from100to1() took 10 milli sec(s)
+Test: from14to16() took 4 milli sec(s)
+Test: from2to100() took 1 milli sec(s)
+Test: fromMinus10to10() took 1 milli sec(s)
+Tests run: 5, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 79 milli sec(s)
+------------- Standard Output ---------------
+Wrong input values: from=-10 to=10
+------------- ---------------- ---------------
