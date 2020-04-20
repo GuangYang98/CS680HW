@@ -1,4 +1,4 @@
-package edu.umb.cs680.hw01;
+package edu.umb.cs680.hw02;
 
 import java.util.Scanner;
 
