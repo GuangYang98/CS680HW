@@ -1,0 +1,6 @@
+Testcase: edu.umb.cs680.hw06.DrawerClosedNotPlayingTest
+Test: playButtonPushedTest() took 0 milli sec(s)
+Test: stopButtonPushedTest() took 2 milli sec(s)
+Test: openCloseButtonPushedTest() took 1 milli sec(s)
+Test: sameInstanceCheck() took 1 milli sec(s)
+Tests run: 4, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 5 milli sec(s)

@@ -1,0 +1,5 @@
+Testcase: edu.umb.cs680.hw10.ApfsCountingVisitorTest
+Test: visitorCountFile() took 8 milli sec(s)
+Test: visitorCountLink() took 1 milli sec(s)
+Test: visitorCountDirectory() took 1 milli sec(s)
+Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 16 milli sec(s)

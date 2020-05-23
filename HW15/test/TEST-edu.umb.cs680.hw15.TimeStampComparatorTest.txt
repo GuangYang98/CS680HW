@@ -1,0 +1,4 @@
+Testcase: edu.umb.cs680.hw15.TimeStampComparatorTest
+Test: DateOrderChildrenTest() took 1 milli sec(s)
+Test: DateOrderFileTest() took 5 milli sec(s)
+Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 12 milli sec(s)

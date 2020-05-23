@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!--
+  To run this build script, type: 
+
+  ant -f hw.xml
+
+  on a shell. 
+-->
+
+<project name="calc" basedir="."  default="clean">
+	<property environment="env"/>
+	<echo message="JUNIT: ${env.JUNIT}" />
+	<echo message="ANT_HOME: ${env.ANT_HOME}" />
+	
+	<property name="src" location="src" />
+	<property name="bin" location="bin" />
+	<property name="testsrc" location="test/src" />
+	<property name="testbin" location="test/bin" />
+	<!-- property name="test.src" location="test/src" /-->
+	<!-- property name="test.bin" location="test/bin" /-->
+	<!-- property name="test.reports" location="test/reports" /-->
+	
+	<path id="classpath">
+		<pathelement location="bin" />
+		<pathelement location="test/bin" />
+		<!-- pathelement location="test/bin" /-->
+		<fileset dir="${env.JUNIT}"/>
+	</path>
+	<echo message="${toString:classpath}" />
+	
+	<target name="init">
+		<mkdir dir="${bin}"/>
+		<mkdir dir="${testbin}"/>
+		<!--mkdir dir="${test.bin}"/-->
+		<!--mkdir dir="${test.reports}"/-->
+	</target>
+	
+	<target name="compile" depends="init">
+		<javac srcdir="${src}" destdir="${bin}" includeAntRuntime="no">
+			<classpath refid="classpath"/>
+			<include name="edu/umb/cs680/hw07/Directory.java"/>
+		</javac>
+
+		<javac srcdir="${src}" destdir="${bin}" includeAntRuntime="no">
+			<classpath refid="classpath"/>
+			<include name="edu/umb/cs680/hw07/File.java"/>
+		</javac>
+
+		<javac srcdir="${src}" destdir="${bin}" includeAntRuntime="no">
+			<classpath refid="classpath"/>
+			<include name="edu/umb/cs680/hw07/FileSystem.java"/>
+		</javac>
+
+		<javac srcdir="${src}" destdir="${bin}" includeAntRuntime="no">
+			<classpath refid="classpath"/>
+			<include name="edu/umb/cs680/hw07/FSElement.java"/>
+		</javac>
+
+		<javac srcdir="${testsrc}" destdir="${testbin}" includeAntRuntime="no">
+			<classpath refid="classpath"/>
+			<include name="edu/umb/cs680/hw07/DirectoryTest.java"/>
+		</javac>
+
+		<javac srcdir="${testsrc}" destdir="${testbin}" includeAntRuntime="no">
+			<classpath refid="classpath"/>
+			<include name="edu/umb/cs680/hw07/FileSystemTest.java"/>
+		</javac>
+
+		<javac srcdir="${testsrc}" destdir="${testbin}" includeAntRuntime="no">
+			<classpath refid="classpath"/>
+			<include name="edu/umb/cs680/hw07/FileTest.java"/>
+		</javac>
+
+	</target>
+
+	<target name="run" depends="compile">
+		<junitlauncher printSummary="true">
+			<classpath refid="classpath"/>
+			<testclasses outputdir="test">
+				<fileset dir="${testbin}">
+					<include name="edu/umb/cs680/hw07/*Test.class"/>
+				</fileset>
+				<listener type="legacy-plain" sendSysOut="true"/>
+			</testclasses>
+		</junitlauncher>
+	</target>
+	
+	<target name="clean" depends="run">
+		<delete includeemptydirs="true">
+			<fileset dir="${bin}"/>
+			<fileset dir="${testbin}"/>
+			<!-- fileset dir="${test.bin}/edu/umb/cs680/junit5intro" includes="**/*" /-->
+		</delete>
+	</target>
+
+</project>

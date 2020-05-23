@@ -1,0 +1,6 @@
+Testcase: edu.umb.cs680.hw10.ApfsFileCrawlingVisitorTest
+Test: rootCrawling() took 4 milli sec(s)
+Test: applicationCrawling() took 0 milli sec(s)
+Test: homeCrawling() took 1 milli sec(s)
+Test: codeCrawling() took 1 milli sec(s)
+Tests run: 4, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 11 milli sec(s)

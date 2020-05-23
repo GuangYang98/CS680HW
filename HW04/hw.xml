@@ -62,11 +62,10 @@
 	</target>
 	
 	<target name="clean" depends="run">
-<!--		<delete includeemptydirs="true">-->
-<!--			<fileset dir="${bin}/edu/umb/cs680/hw04" includes="**/*"/>-->
-<!--			<fileset dir="${testbin}/edu/umb/cs680/hw04" includes="**/*"/>-->
-<!--			&lt;!&ndash; fileset dir="${test.bin}/edu/umb/cs680/junit5intro" includes="**/*" /&ndash;&gt;-->
-<!--		</delete>-->
+		<delete includeemptydirs="true">
+			<fileset dir="${bin}"/>
+			<fileset dir="${testbin}"/>
+		</delete>
 	</target>
 
 </project>

@@ -1,0 +1,4 @@
+Testcase: edu.umb.cs680.hw15.AlphabeticalComparatorTest
+Test: AlphaOrderChildrenTest() took 23 milli sec(s)
+Test: AlphaOrderFileTest() took 1 milli sec(s)
+Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 46 milli sec(s)
